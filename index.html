@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d70a1f20c5.js" crossorigin="anonymous"></script>
+    <!--! Componentes -->
+    <script defer src="/components/Header/index.js"></script>
+    <script defer src="/components/Logo/index.js"></script>
+    <script defer src="/components/Backgrounds/index.js"></script>
+    <script defer src="/components/Servicios-Portfolio/index.js"></script>
+    <script defer src="/components/Contacto/index.js"></script>
+    <script defer src="/components/Footer/index.js"></script>
+    <!--! Pages -->
+    <script defer src="/pages/presentacion.js"></script>
+    <script defer src="/pages/index.js"></script>
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Desafío Final Mod. 4</title>
+</head>
+
+<body>
+    <div class="home">
+        <section class="home__bienvenida">
+            <!-- Sección para montar componente de Header -->
+            <h2 class="bienvenida__saludo">Hola<br>Soy Tobías</h2>
+        </section>
+
+        <section class="home__presentacion">
+            <img class="presentacion__img-perfil" src="" alt="Mi foto">
+            <div class="presentacion__sobre-mi">
+                <h2 class="sobre-mi__titulo"></h2>
+                <p class="sobre-mi__descripcion">
+                </p>
+            </div>
+        </section>
+        <section class="home__servicios">
+            <h2 class="servicios__titulo">Mis servicios</h2>
+            <ul class="servicios__lista">
+                <!-- Lista para montar template de Servicios -->
+            </ul>
+        </section>
+
+        <section class="seccion-contacto">
+            <!-- Sección para montar componente de Contacto -->
+        </section>
+
+        <section class="seccion-footer">
+            <!-- Sección para montar componente de Footer -->
+        </section>
+    </div>
+</body>
+
+<template class="servicio-tpl">
+    <li class="lista__servicio">
+        <img src="" alt="" class="servicio__img">
+        <h3 class="servicio__nombre"></h3>
+        <figcaption class="servicio__descripcion"></figcaption>
+    </li>
+</template>
+
+</html>

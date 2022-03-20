@@ -1,0 +1,113 @@
+/*! Components */
+@import url("/components/Header/index.css");
+@import url("/components/Servicios-Portfolio/index.css");
+@import url("/components/Footer/index.css");
+
+/*! Página de Portfolio */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.seccion-header {
+	background-color: #141414;
+}
+
+.portfolio__bienvenida {
+	display: flex;
+	align-items: center;
+	height: 60%;
+	background-color: #141414;
+}
+
+@media (min-width: 960px) {
+	.portfolio__bienvenida {
+		height: calc(100vh - 100px);
+		background: radial-gradient(
+				111% 111% at 74.29% -11%,
+				#a93300 0%,
+				#005570 100%
+			),
+			linear-gradient(127.43deg, #00d5c8 0%, #2200aa 100%);
+		background-blend-mode: difference, normal;
+	}
+}
+
+.servicios__titulo {
+	font-size: 36px;
+	font-weight: 700;
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 60px;
+	color: #fff;
+}
+
+@media (min-width: 960px) {
+	.servicios__titulo {
+		justify-self: flex-start;
+		font-size: 48px;
+		margin-left: 70px;
+	}
+}
+
+.home__servicios {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #141414;
+}
+
+.portfolio__lista {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@media (min-width: 960px) {
+	.portfolio__lista {
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+.servicio__img-container {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.servicio__img {
+	width: 100%;
+	height: auto;
+}
+
+.servicio__nombre {
+	color: #fff;
+}
+
+.servicio__descripcion {
+	color: #dbdbdb;
+}
+
+.servicio__detalles {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	align-self: center;
+	padding: 20px;
+	text-decoration: none;
+	color: #f7c74b;
+}

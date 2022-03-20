@@ -1,0 +1,15 @@
+/*! Sección Bienvenida/Backgrounds */
+
+@media (min-width: 320px) {
+	.home__bienvenida {
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+@media (min-width: 475px) {
+	.home__bienvenida {
+		background-position: center;
+	}
+}

@@ -1,0 +1,142 @@
+/*! Componente Header */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	padding: 0 20px;
+	box-shadow: inset 0 0 20px 0px rgba(1, 1, 1, 0.25);
+}
+
+@media (min-width: 960px) {
+	.header {
+		height: 70px;
+		padding: 50px 70px;
+	}
+}
+
+@media (min-width: 960px) {
+	.home__link:hover {
+		border-radius: 2px;
+		border-color: rgba(255, 255, 255, 0.2);
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+}
+
+.home__link:active {
+	border-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header__logo {
+	width: 130px;
+}
+
+@media (min-width: 960px) {
+	.header__logo {
+		width: 200px;
+	}
+}
+
+.header__open-menu-burger {
+	text-align: center;
+}
+
+.header__menu-burger {
+	width: 40px;
+}
+
+.header__close-menu {
+	display: block;
+	position: absolute;
+	top: 35px;
+	right: 30px;
+	text-align: center;
+}
+
+@media (min-width: 960px) {
+	.header__open-menu-burger {
+		display: none;
+	}
+}
+
+.header__nav {
+	list-style: none;
+}
+
+@media (max-width: 959px) {
+	.header__nav {
+		display: none;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		background-color: #141414;
+		transition: top 1s ease;
+	}
+}
+
+@media (min-width: 960px) {
+	.header__nav {
+		display: flex;
+		width: 50%;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header__nav div {
+		display: none;
+	}
+}
+
+.nav__link {
+	font-family: "Poppins", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+@media (max-width: 959px) {
+	.nav__link {
+		font-size: 36px;
+	}
+}
+
+.nav__link a {
+	padding: 15px 5px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+@media (min-width: 960px) {
+	.nav__link a:hover {
+		border-radius: 2px;
+		border-color: rgba(255, 255, 255, 0.2);
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+}
+
+.nav__link a:active {
+	border-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.bienvenida__saludo {
+	margin: 0;
+	padding-top: 70px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	text-align: center;
+	color: #fff;
+}
+
+.bienvenida__saludo::first-line {
+	font-size: 48px;
+}
