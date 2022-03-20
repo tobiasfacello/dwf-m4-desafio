@@ -1,7 +1,7 @@
 /*! Components */
-@import url("/components/Header/index.css");
-@import url("/components/Servicios-Portfolio/index.css");
-@import url("/components/Footer/index.css");
+@import url("./components/Header/index.css");
+@import url("./components/Servicios-Portfolio/index.css");
+@import url("./components/Footer/index.css");
 
 /*! Página de Portfolio */
 

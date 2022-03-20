@@ -1,5 +1,5 @@
 /*! Components */
-@import url("/components/Contacto/index.css");
+@import url("./components/Contacto/index.css");
 
 @media (min-width: 960px) {
 	.home__contacto {
