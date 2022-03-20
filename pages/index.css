@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap");
 
-/*! Components */
-@import url("./components/Header/index.css");
-@import url("./components/Backgrounds/index.css");
-@import url("./components/Servicios-Portfolio/index.css");
-@import url("./components/Contacto/index.css");
-@import url("./components/Footer/index.css");
-
-/*! Pages */
-@import url("./pages/presentacion.css");
-
 * {
 	box-sizing: border-box;
 }

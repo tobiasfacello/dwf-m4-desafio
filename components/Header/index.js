@@ -15,7 +15,6 @@ function headerComponent(el) {
         <div class="header__close-menu-burger">
         <i class="fa-solid fa-times fa-inverse fa-2xl header__close-menu"></i>
         </div>
-
     </div>
     `;
 
