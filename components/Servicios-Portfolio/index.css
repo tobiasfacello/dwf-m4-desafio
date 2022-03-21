@@ -28,6 +28,12 @@
 	color: #2c2c2c;
 }
 
+@media (min-width: 960px) {
+	.servicios__titulo {
+		font-size: 48px;
+	}
+}
+
 .servicios__lista {
 	width: 100%;
 	display: flex;

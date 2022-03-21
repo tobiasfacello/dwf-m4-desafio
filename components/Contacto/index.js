@@ -24,5 +24,29 @@ function contactComponent(el) {
                 </div>
             </form>
     `;
+
+	const form = contacto.querySelector(".contacto__form");
+
+	form.addEventListener("submit", (event) => {
+		console.log(event);
+		const mensaje = {
+			to: "tobiasfacellodeveloper@gmail.com",
+			message: `
+            Nombre: ${form["nombre"].value} \nEmail: ${form["email"].value}; \nMensaje: "${form["mensaje"].value}".
+            `,
+		};
+		fetch("https://apx-api.vercel.app/api/utils/dwf", {
+			method: "POST",
+			body: JSON.stringify(mensaje),
+			headers: { "content-type": "application/json" },
+		}).catch((error) => {
+			console.log(error);
+		});
+		form["nombre"].value = "";
+		form["email"].value = "";
+		form["mensaje"].value = "";
+		console.log("Mensaje enviado.");
+	});
+
 	el.appendChild(contacto);
 }
