@@ -28,12 +28,9 @@ function contactComponent(el) {
 	const form = contacto.querySelector(".contacto__form");
 
 	form.addEventListener("submit", (event) => {
-		console.log(event);
 		const mensaje = {
 			to: "tobiasfacellodeveloper@gmail.com",
-			message: `
-            Nombre: ${form["nombre"].value} \nEmail: ${form["email"].value}; \nMensaje: "${form["mensaje"].value}".
-            `,
+			message: `Nombre: ${form["nombre"].value}\n Email: ${form["email"].value}\n Mensaje: "${form["mensaje"].value}".`,
 		};
 		fetch("https://apx-api.vercel.app/api/utils/dwf", {
 			method: "POST",
