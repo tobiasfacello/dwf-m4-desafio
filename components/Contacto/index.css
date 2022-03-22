@@ -87,6 +87,11 @@
 	border-radius: 4px;
 }
 
+.section__input:valid,
+.section__mensaje:valid {
+	border-color: #15b560;
+}
+
 .form__button-container {
 	width: 100%;
 	min-height: 45px;
@@ -114,6 +119,7 @@
 
 @media (min-width: 960px) {
 	.form__submit-button:hover {
+		cursor: pointer;
 		background-color: #141414;
 		border-color: #f0ebcc;
 	}
@@ -123,4 +129,20 @@
 	border-color: #f0ebcc;
 	background-color: #f0ebcc;
 	color: #141414;
+}
+
+.swal-modal {
+	border: 3px solid #dbdbdb;
+}
+
+.swal-title {
+	font-family: "Poppins";
+	font-size: 24px;
+	text-align: center;
+}
+
+.swal-text {
+	font-family: "Poppins";
+	font-size: 13px;
+	text-align: center;
 }

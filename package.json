@@ -1,0 +1,23 @@
+{
+  "name": "dwf-m4-desafio",
+  "version": "1.0.0",
+  "description": "https://tobiasfacello.github.io/dwf-m4-desafio/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiasfacello/dwf-m4-desafio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobiasfacello/dwf-m4-desafio/issues"
+  },
+  "homepage": "https://github.com/tobiasfacello/dwf-m4-desafio#readme",
+  "dependencies": {
+    "sweetalert": "^2.1.2"
+  }
+}
